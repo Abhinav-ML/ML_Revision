@@ -1,0 +1,59 @@
+https://www.analyticsvidhya.com/blog/2021/03/beginners-guide-to-support-vector-machine-svm/
+__________________
+https://www.analyticsvidhya.com/blog/2021/10/support-vector-machinessvm-a-complete-guide-for-beginners/
+
+go for it....
+____________________________________
+https://www.analyticsvidhya.com/blog/2021/06/support-vector-machine-better-understanding/
+
+What Is Sklearn SVM (Support Vector Machines)?
+Support vector machines (SVMs) are supervised machine learning algorithms for outlier detection, regression, and classification that are both powerful and adaptable. Sklearn SVMs are commonly employed in classification tasks because they are particularly efficient in high-dimensional fields. Because they use a training points subset in the decision function, SVMs are popular and memory efficient.
+
+SVMs' main purpose is to partition datasets into a large number of classes in order to discover a Maximum Marginal Hyperplane (MMH), which can be done in two steps:
+
+Support Vector Machines will initially iteratively build hyperplanes that best distinguish the classes.
+It will then select the hyperplane that best separates the classes.
+Now that we understand what Sklearn SVMs are, let us look at how Sklearn Support Vector Machines work.
+
+How Does Sklearn SVM Work?
+In order to construct a hyperplane, SVM uses extreme data points (vectors), which are referred to as support vectors. The SVM algorithm's main goal is to find an ideal hyperplane with a large margin that can create discrete classes by dividing it into an n-dimensional space. 
+
+The following are some crucial principles in SVM:
+
+Support Vectors - The data points nearest to the hyperplane are known as support vectors. The separation line can be determined with the use of support vectors.
+Hyperplane - The space or decision plane that divides a group of items into multiple classes is referred to as a hyperplane.
+Margin - The distance between two lines on distinct classes' nearest data points.
+Maximum margin - An ideal hyperplane is one that has the largest margi
+
+_________________________
+
+
+SVM has applications in different areas of daily life, such as: 
+
+Face Detection 
+Using image training data, SVM classifies pixels in images like a face or non-face
+Text Classification
+Training data is used to categorize different types of documents. For instance, news articles can be classified as “business” or “entertainment.” 
+Classifying Images
+By classifying images with improved techniques, SVM increases search accuracy. 
+Bioinformatics
+SVM algorithms have increased the effectiveness in protein homology detection, cancer classification, gene classification, and more. 
+__________________________________________
+
+Advantages of SVM
+1. SVM works better when the data is Linear
+
+2. It is more effective in high dimensions
+
+3. With the help of the kernel trick, we can solve any complex problem
+
+4. SVM is not sensitive to outliers
+
+5. Can help us with Image classification
+
+Disadvantages of SVM
+1. Choosing a good kernel is not easy
+
+2. It doesn’t show good results on a big dataset
+
+3. The SVM hyperparameters are Cost -C and gamma. It is not that easy to fine-tune these hyper-parameters. It is hard to visualize their impact
