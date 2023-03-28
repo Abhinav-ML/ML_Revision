@@ -1,0 +1,120 @@
+Logistic Regression is a supervised classification Machine Learning algorith that is used to solve classification issues. It is a predictive analytic technique that is based on the probability idea. The classification algorithm Logistic Regression is used to predict the likelihood of a categorical dependent variable. The dependant variable in logistic regression is a binary variable with data coded as 1 (yes, True, normal, success, etc.) or 0 (no, False, abnormal, failure, etc.).
+
+The goal of Logistic Regression is to discover a link between characteristics and the likelihood of a specific outcome. For example, when predicting whether a student passes or fails an exam based on the number of hours spent studying, the response variable has two values: pass and fail.
+
+A Logistic Regression model is similar to a Linear Regression model, except that the Logistic Regression utilizes a more sophisticated cost function, which is known as the “Sigmoid function” or “logistic function” instead of a linear function.
+
+Many people may have a question, whether Logistic Regression is a classification or regression category. The logistic regression hypothesis suggests that the cost function be limited to a value between 0 and 1. As a result, linear functions fail to describe it since it might have a value larger than 1 or less than 0, which is impossible according to the logistic regression hypothesis.
+
+Behind every great leader, there was an even greater logistician.
+
+Types of Logistic Regression:
+In general, it can be classified into,
+
+1. Binary Logistic Regression – two or binary outcomes like yes or no
+
+2. Multinomial Logistic Regression – three or more outcomes like first, second, and third class or no class degree
+
+3. Ordinal Logistic Regression – three or more like multinomial logistic regression but here with the order like customer rating in the supermarket from 1 to 5
+
+ 
+
+Requirements for Logistic Regression to work well
+This model can work for all the datasets, but still, if you need good performance, then there will be some assumptions to consider,
+
+1. The dependant variable in binary logistic regression must be binary.
+
+2. Only the variables that are relevant should be included.
+
+3. The independent variables must be unrelated to one another. That is, there should be minimal or no multicollinearity in the model.
+
+4. The log chances are proportional to the independent variables.
+
+5. Large sample sizes are required for logistic regression.
+
+Decision Boundary – Logistic Regression
+A threshold can be established to forecast which class a data belongs to. The derived estimated probability is categorized into classes based on this threshold.
+
+If the predicted value is less than 0.5, categorize the particular student as a pass; otherwise, label it as a fail. There are two types of decision boundaries: linear and non-linear. To provide a complicated decision boundary, the polynomial order can be raised.
+
+Why can’t the cost function that was used for linearity be used for logistics?
+The cost function for linear regression is mean squared error. If this is utilized for logistic regression, the function of parameters will be non-convex. Only if the function is convex will gradient descent lead to a global minimum. 
+
+Advantages of Logistic Regression
+1. Overfitting is less likely with logistic regression, although it can happen in high-dimensional datasets. In these circumstances, regularization (L1 and L2) techniques may be used to minimize over-fitting.
+
+2. It works well when the dataset is linearly separable and has good accuracy for many basic data sets.
+
+3. It is more straightforward to apply, understand, and train.
+
+4. The inferences regarding the relevance of each characteristic are based on the anticipated parameters (trained weights). The association’s orientation, positive or negative, is also specified. As a result, logistic regression may be used to determine the connection between the characteristics.
+
+5. Unlike decision trees or support vector machines, this technique allows models to be readily changed to incorporate new data. Stochastic gradient descent can be used to update the data.
+
+6. It is less prone to over-fitting in a low-dimensional dataset with enough training instances.
+
+7. When the dataset includes linearly separable characteristics, Logistic Regression shows to be highly efficient.
+
+8. It has a strong resemblance to neural networks. A neural network representation may be thought of as a collection of small logistic regression classifiers stacked together.
+
+9. The training time of the logistic regression method is considerably smaller than that of most sophisticated algorithms, such as an Artificial Neural Network, due to its simple probabilistic interpretation.
+
+10. Multinomial Logistic Regression is the name given to an approach that may easily be expanded to multi-class classification using a softmax classifier.
+
+Disadvantages of Logistic Regression
+1. Logistic Regression should not be used if the number of observations is fewer than the number of features; otherwise, it may result in overfitting.
+
+2. Because it creates linear boundaries, we won’t obtain better results when dealing with complex or non-linear data.
+
+3. It’s only good for predicting discrete functions. As a result, the Logistic Regression dependent variable is restricted to the discrete number set.
+
+4. The average or no multicollinearity between independent variables is required for logistic regression.
+
+5. Logistic regression needs a big dataset and enough training samples to identify all of the categories.
+
+6. Because this method is sensitive to outliers, the presence of data values in the dataset that differs from the anticipated range may cause erroneous results.
+
+7. Only significant and relevant features should be utilized to construct a model; otherwise, the model’s probabilistic predictions may be inaccurate, and its predictive value may suffer.
+
+8. Complex connections are difficult to represent with logistic regression. This technique is readily outperformed by more powerful and sophisticated algorithms such as Neural Networks.
+
+9. Because logistic regression has a linear decision surface, it cannot address nonlinear issues. In real-world settings, linearly separable data is uncommon. As a result, non-linear features must be transformed, which may be done by increasing the number of features such that the data can be separated linearly in higher dimensions.
+
+10. Based on independent variables, a statistical analysis model seeks to predict accurate probability outcomes. On high-dimensional datasets, this may cause the model to be over-fit on the training set, overstating the accuracy of predictions on the training set, and so preventing the model from accurately predicting outcomes on the test set. This is most common when the model is trained on a little amount of training data with many features. Regularization strategies should be explored on high-dimensional datasets to minimize over-fitting (but this makes the model complex). The model may be under-fit on the training data if the regularization parameters are too high.
+
+Application of Logistic Regression
+All use cases where data must be categorized into multiple groups are covered by Logistic Regression. Consider the following illustration:
+
+Fraud detection in Credit card
+Email spam or ham
+Sentiment Analysis in Twitter analysis
+Image segmentation, recognition, and classification – X-rays, Scans
+Object detection through video
+Handwriting recognition
+Disease prediction – Diabetes, Cancer, Parkinson etc…
+
+
+
+####################  Performance metrics     #######################
+
+https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/
+
+Here are a few definitions you need to remember for a confusion matrix:
+
+True Positive: You predicted positive, and it’s true.
+True Negative: You predicted negative, and it’s true.
+False Positive: (Type 1 Error): You predicted positive, and it’s false.
+False Negative: (Type 2 Error): You predicted negative, and it’s false.
+Accuracy: the proportion of the total number of correct predictions that were correct.
+Positive Predictive Value or Precision: the proportion of positive cases that were correctly identified.
+Negative Predictive Value: the proportion of negative cases that were correctly identified.
+Sensitivity or Recall: the proportion of actual positive cases which are correctly identified.
+Specificity: the proportion of actual negative cases which are correctly identified.
+Rate: It is a measuring factor in a confusion matrix. It has also 4 types TPR, FPR, TNR, and FNR.
+confusion matrix, evaluation metrics
+confusion matrix | evaluation metrics
+
+
+
+
+
