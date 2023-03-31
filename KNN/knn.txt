@@ -1,0 +1,59 @@
+######   Distance Calculation      #######
+Visit : analyticsvidhya.com/blog/2020/02/4-types-of-distance-metrics-in-machine-learning/
+
+#####  video     ########
+https://courses.analyticsvidhya.com/courses/take/K-Nearest-Neighbors-KNN-Algorithm/lessons/11126567-issues-with-distance-based-algorithms
+
+
+* Taking a majority vote among labels needs K to be an odd number to have a tiebreaker. 
+
+* The value of k is crucial, and one needs to choose it wisely to prevent overfitting or underfitting the model.
+
+* One can use cross-validation to select the optimal value of k for the k-NN algorithm, which helps improve its performance and prevent overfitting or underfitting. Cross-validation is also used to identify the outliers before applying the KNN algorithm.
+
+
+___________________________________________________________________
+https://courses.analyticsvidhya.com/courses/K-Nearest-Neighbors-KNN-Algorithm?utm_source=blog&utm_medium=knn_in_python&R
+
+What is the K-Nearest Neighbor (KNN) algorithm?
+K-Nearest Neighbor (KNN) algorithm is a distance based supervised learning algorithm that is used for solving classification problems. In this, we will be looking at the classes of the k nearest neighbors to a new point and assign it the class to which the majority of k neighbours belong too.
+To identify the nearest neighbors we use various techniques of measuring distance, the most common of them being the  ‘Euclidean Distance’.
+
+Why should you learn KNN in machine learning?
+KNN is among the most widely used and popular machine learning algorithms in the industry. Every data scientist, amateur or established, is expected to know the ins and outs of KNN. You should be able to implement it in Python or R (or any other programming language) if you want to land a role in the machine learning space.
+Additionally, as you’ll see in the course, KNN unlocks a lot of avenues to solving machine learning problems.
+
+When should you use KNN?
+KNN can be used for both classification and regression predictive problems. However, it is more widely used in classification problems in the industry.
+
+Can I use KNN for both classification and regression problems?
+Yes! We just answered the question above but let’s expand a bit more on that. To evaluate any technique we generally look at 3 important aspects:
+Ease to interpret output
+Calculation time
+Predictive Power
+
+KNN algorithm fairs well across all parameters of considerations. It is commonly used for its ease of interpretation and low calculation time.
+
+What kind of projects can you do using KNN?
+You can perform both classification and regression projects. From predicting the price of a house (regression) to identifying if a loan will default or not (classification), you can apply KNN across a range of problems.
+We suggest heading to the DataHack platform, picking up a problem of your choice, and applying KNN there to solidify your practical understanding.
+
+Do I need to learn Python or R (or any other programming language) to use KNN?
+Well - yes and no. While KNN can still be performed on GUI based tools like KNIME, you should still have a working knowledge of how to implement it in Python or R. That’s a key consideration in the machine learning space.
+
+Will machine learning project interviews ask you about KNN?
+There’s a high chance you’ll be asked at least a couple of questions on the KNN algorithm. Depending on the level you’re applying for, you could be asked to explain how KNN works in a certain business scenario and how you would explain the results of a KNN model to a non-technical audience (a very common question!).
+
+What does the ”K” in KNN stand for?
+“K” in “KNN” stands for the number of cases that are considered to be "nearest" when you convert the cases as points in a euclidean space. 
+That means, if we consider k=3, and when a new point has to be assigned a class, it will be on the basis of the classes of the 3 nearest points that surround the new point as per the euclidean distance.
+
+How to calculate the distance between points in KNN?
+There are various methods for calculating this distance, of which the most commonly known methods are – Euclidian, Manhattan (for continuous) and Hamming distance (for categorical). While other methods do exist, these are typically the most common ones and you’ll learn more about them in the course.
+
+___________________________________________________________________
+
+
+
+
+
